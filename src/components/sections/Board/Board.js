@@ -13,7 +13,7 @@ export default class Board extends Component {
             <div className="boardContainer">
                 {
                     columns.map((column, i) => {
-                        const {name, content} = column
+                        const {name, content, priority} = column
                         return (
                             <Column id={name} name={name} content={content}/>
                         )

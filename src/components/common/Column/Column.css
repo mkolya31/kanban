@@ -15,11 +15,11 @@ div.columnContainer:first-child {
 }
 
 div.columnContainer:nth-child(odd) {
-    background: #f9f9f9;
+    background: #deedf9;
 }
 
 div.columnContainer:nth-child(even) {
-    background: #ffffff;
+    background: #d8e6f9;
 }
 
 div.columnContainer > div.columnTitle {
@@ -30,8 +30,84 @@ div.columnContainer > div.columnTitle {
     border-bottom: #3d82e3 4px solid;
 }
 
-div.columnContent .ant-card {
+div.columnContent .kanbanCard {
     margin: 1.5rem 1rem;
-    max-width: 400px;
-    min-width: 200px;
+    min-width: 400px;
+    min-height: 170px;
+    border-radius: 3px;
+    border: 1px #ececec solid;
+    background: white;
+    position: relative;
+}
+
+.archivedCard.archivedCard {
+    color: white!important;
+    background: #696969!important;
+}
+
+.kanbanCard > span {
+    display: block;
+    font-size: 12pt;
+}
+
+.kanbanCard > .cardTitle {
+    margin: 10px 0;
+}
+
+.kanbanCard > .cardDesc {
+    border-top: 1px #cdcdcd solid;
+    padding-top: 10px;
+}
+
+.kanbanCard > .cardDesc > span {
+    margin: 0 30px;
+}
+
+.kanbanCard > .cardIcon {
+    position: absolute;
+}
+
+.kanbanCard > .deleteIcon {
+    right: 12px;
+    top: 12px;
+}
+
+.kanbanCard > .editIcon {
+    right: 40px;
+    top: 11px;
+}
+
+.kanbanCard > .addIcon {
+    right: 40px;
+    top: 12px;
+}
+
+.kanbanCard > .priorityIcon {
+    left: 12px;
+    top: 12px;
+    color: #0969e3;
+}
+
+.kanbanCard > .priorityIcon.archived {
+    color: white;
+}
+
+.kanbanCard > .deleteIcon:hover {
+    color: #ff726d;
+    cursor: pointer;
+}
+
+.kanbanCard > .editIcon:hover {
+    color: #3cd02a;
+    cursor: pointer;
+}
+
+.kanbanCard > .addIcon:hover {
+    color: #3cd02a;
+    cursor: pointer;
+}
+
+span.deleteOption {
+    font-size: 12pt;
+    margin-left: 10px;
 }

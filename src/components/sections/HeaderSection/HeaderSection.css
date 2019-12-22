@@ -1,0 +1,14 @@
+input.checkbox {
+    width: 17px;
+    height: 17px;
+}
+
+div.checkboxDiv {
+    display: flex;
+    align-items: center;
+}
+
+span.checkboxSpan {
+    margin-left: 10px!important;
+    font-size: 14pt;
+}
